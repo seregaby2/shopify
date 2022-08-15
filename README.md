@@ -1,2 +1,0 @@
-# shopify
-test task
