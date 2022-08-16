@@ -1,1 +1,186 @@
-/* Смотри сколько снизу свободного места! Оно идеально подойдёт, чтобы писать твои стили! */
+html {
+    background-color: #F6F6F6;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+
+}
+
+.title {
+    margin: 40px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 72px;
+    text-align: center;
+    text-transform: uppercase; 
+}
+
+.wrapperItem {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1180px;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+
+.wrapperItems__item {
+    max-width: 380px;
+    width: 100%;
+    height: 482px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.18);
+}
+
+.wrapperItems__item__image {
+    width: 100%;
+    height: 213.75px;
+    background-image: url("./assets//image/Image.jpg");
+    background-size: cover;
+    border-top-right-radius:12px; 
+    border-top-left-radius:12px
+}
+
+.wrapperItems__item__title {
+    margin: 24px 24px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 36px;
+}
+
+.wrapperItems__item__title:first-letter {
+    text-transform: uppercase;
+}
+
+.wrapperItems__item__text {
+    height: 96px;
+    margin: 0 24px 24.25px 24Px;
+    color: #2F2F2F;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+.wrapperItems__item__button {
+    width: 332px;
+    height: 48px;
+    margin: 24px 24px 23.75px;
+    color: #42940F;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    border: 2px solid #42940F;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+.wrapperItems__item__button:disabled {
+    background-color: #4E4E4E;
+    color: #FFFFFF;
+    border: 2px solid #4E4E4E;
+    cursor: not-allowed;
+}
+
+.wrapperItems__item__button:hover:enabled {
+    background-color: #42940F;
+    color: #FFFFFF;
+    border: 2px solid #42940F;
+}
+
+.wrapperItems__item__button:active:enabled {
+    background-color: #1F5200;
+    color: #FFFFFF;
+    border: 2px solid #1F5200;
+}
+
+.wrapperItems__item__tag {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 263px;
+    margin: 16px;
+}
+
+.wrapperItems__item__tag__new,
+.wrapperItems__item__tag__last{ 
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.wrapperItems__item__tag__new {
+    width: 111px;
+    background-color: #FDCFF3;
+}
+
+.wrapperItems__item__tag__last {
+    width: 134.41px;
+    background-color: #FFCF56;
+}
+
+
+
+@media (max-width: 1200px) {
+
+    .wrapperItem {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .wrapperItems__item {
+        margin-bottom: 20px;
+    }
+
+    .title {
+        margin: 40px 0 5px 0;
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 450px) {
+    .title {
+        margin: 40px 0 0 0;
+        font-size: 28px;
+    }
+    
+    .wrapperItem {
+        max-width: 300px;
+    }
+
+    .wrapperItems__item__button {
+        margin: 34px 24px 19.75px;
+        width: 250px;
+    }
+
+    .wrapperItems__item__text {
+        margin: 0 24px 0.25px 24Px;
+    }
+
+    .wrapperItems__item__title {
+        margin: 24px 24px 10px;
+        font-size: 22px;
+    }
+
+}
